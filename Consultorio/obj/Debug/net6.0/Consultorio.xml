@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Consultorio</name>
+    </assembly>
+    <members>
+        <member name="T:ConsultorioProject.Migrations.Inicial">
+            <inheritdoc />
+        </member>
+        <member name="M:ConsultorioProject.Migrations.Inicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ConsultorioProject.Migrations.Inicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ConsultorioProject.Migrations.Inicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:ConsultorioProject.Migrations.DateOnly">
+            <inheritdoc />
+        </member>
+        <member name="M:ConsultorioProject.Migrations.DateOnly.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ConsultorioProject.Migrations.DateOnly.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:ConsultorioProject.Migrations.DateOnly.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
