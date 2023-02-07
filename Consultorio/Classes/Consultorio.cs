@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Npgsql.PostgresTypes;
+using System;
+using System.Linq;
 
 public class Consultorio
 {
@@ -11,8 +13,8 @@ public class Consultorio
 	{
         this.pacienteDAO = new PacienteDAO();
         this.agendaDAO = new AgendaDAO();
-        InicializarPacientes();
         InicializarAgenda();
+        InicializarPacientes();
     }
 
 
@@ -119,10 +121,17 @@ public class Consultorio
     public void InicializarPacientes()
     {
         pacientes = pacienteDAO.RecuperarPacientes();
-
+        
         if (pacientes.Count == 0)
         {
             pacientes = new List<Paciente>();
+        } 
+        else
+        {
+            foreach (var pct in pacientes)
+            {
+                pct.Agendamentos = agenda.ObterAgendamentos().Where(a => a.PacienteCpf == pct.Cpf).ToList();
+            }
         }
     }
     //-------------------------------- Fim Métodos Paciente ---------------------------------\\

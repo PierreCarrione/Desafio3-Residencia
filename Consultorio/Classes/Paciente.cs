@@ -16,7 +16,7 @@ public class Paciente : Pessoa
     public List<Agendamento> Agendamentos
     {
         get { return agendamentos.ToList(); }
-        private set { agendamentos = value; }
+        set { agendamentos = value; }
     }
 
     public override bool Equals(object? obj)
