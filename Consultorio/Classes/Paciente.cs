@@ -28,12 +28,6 @@ public class Paciente : Pessoa
 
     public bool VerificaConsultaFutura()
     {
-        /*DataOutput.WriteLine(agendamentos.Count.ToString());
-
-        for (int i = 0; i < agendamentos.Count; i++)
-        {
-            DataOutput.WriteLine(agendamentos[i].DataConsulta.ToString());
-        }*/
         return agendamentos.Any(x => x.DataConsulta > DateOnly.FromDateTime(DateTime.Now));
     }
 
